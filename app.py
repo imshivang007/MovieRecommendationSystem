@@ -1,10 +1,15 @@
+import os
+from dotenv import load_dotenv
 import pickle
 import streamlit as st
 import requests
 import pandas as pd
 
+load_dotenv()  # Load environment variables from .env file
+
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=1edeaeaefe40ec07788145dfb34260b4&language=en-US".format(movie_id)
+    api_key = os.getenv("TMDB_API_KEY")
+    url = "https://api.themoviedb.org/3/movie/{}?api_key={}&language=en-US".format(movie_id, api_key)
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
