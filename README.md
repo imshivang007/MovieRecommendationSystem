@@ -54,7 +54,7 @@ This will open the app in your default web browser. Select a movie from the drop
 
 ## Deployment
 
-This app is deployed on [Render](https://render.com), not Heroku.
+This app is deployed on [Render](https://render.com).
 
 You can access the live app here: [https://movierecommendationsystem-4r0a.onrender.com](https://movierecommendationsystem-4r0a.onrender.com)
 
