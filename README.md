@@ -54,14 +54,16 @@ This will open a web interface where you can select a movie from the dropdown an
 
 ## Deployment
 
-The project includes deployment configuration for platforms like Heroku:
+The project includes deployment configuration for platforms like Render:
 
 - `setup.sh` configures Streamlit server settings.
 - `Procfile` defines the command to run the app:
 
 ```
 web: sh setup.sh && streamlit run app.py
-```
+
+The project is deployed on Render and can be accessed at:  
+[https://movierecommendationsystem-4r0a.onrender.com](https://movierecommendationsystem-4r0a.onrender.com)
 
 ## Environment Variables
 
